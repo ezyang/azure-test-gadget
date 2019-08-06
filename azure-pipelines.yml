@@ -11,3 +11,12 @@ jobs:
     inputs:
       versionSpec: "3.7"
   - script: python --version
+- job: warp
+  displayName: "MOOP"
+  pool:
+    vmImage: 'Ubuntu 16.04'
+  steps:
+  - task: UsePythonVersion@0
+    inputs:
+      versionSpec: "3.7"
+  - script: python --version
